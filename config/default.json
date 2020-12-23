@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://MernDB:MernDB@merntut.vtjkl.mongodb.net/<dbname>?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://MernDB:MernDB@merntut.vtjkl.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  "jwtToken": "Mysecretishidden"
 }
