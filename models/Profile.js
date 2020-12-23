@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const ProfileSchema = new mongoose.Schema({
   user: {
-    type: mongoose.Schema.Types.objectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: "user",
   },
   company: {
@@ -15,7 +15,7 @@ const ProfileSchema = new mongoose.Schema({
     type: String,
   },
   status: {
-    type: boolean,
+    type: Boolean,
     required: true,
   },
   skills: {
@@ -50,7 +50,7 @@ const ProfileSchema = new mongoose.Schema({
         type: Date,
       },
       current: {
-        type: boolean,
+        type: Boolean,
         required: true,
       },
       description: {
@@ -80,7 +80,7 @@ const ProfileSchema = new mongoose.Schema({
         type: Date,
       },
       current: {
-        type: boolean,
+        type: Boolean,
         required: true,
       },
       description: {
