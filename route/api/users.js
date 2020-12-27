@@ -3,17 +3,18 @@ const { check, validationResult } = require("express-validator");
 const router = express.Router();
 const config = require("config");
 
-const bcrypt = require("bcryptjs");
-const gravatar = require("gravatar");
-const jwt = require("jsonwebtoken");
+const bcrypt = require('bcryptjs');
+const gravatar = require('gravatar');
+const jwt = require('jsonwebtoken');
+
 //create User model for DB
-const User = require("../../models/User");
+const User = require('../../models/User');
 
 // @route   POST api/users
 // @desc    TO verify and handle user input req
 // @access  Public
 router.post(
-  "/",
+  '/',
   [
     check("name", "Name is Required").not().isEmpty(),
     check("email", "Please enter a valid email address").isEmail(),
